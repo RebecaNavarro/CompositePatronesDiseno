@@ -8,6 +8,11 @@ public class Platos implements Menu{
 
     @Override
     public void preparar() {
-        System.out.println("Se preparará " + numeroPlatos + " plato(s)");
+        System.out.print("Se preparará " + numeroPlatos + " plato(s). ");
+    }
+
+    @Override
+    public void tipo(String tipo) {
+        System.out.println("Se preparará " + tipo);
     }
 }

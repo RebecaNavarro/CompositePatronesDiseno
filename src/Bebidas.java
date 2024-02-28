@@ -8,7 +8,13 @@ public class Bebidas implements Menu {
 
     @Override
     public void preparar() {
-        System.out.println("Se preparará " + numeroBebidas + " bebida(s)");
+        System.out.print("Se preparará " + numeroBebidas + " bebida(s). ");
     }
+
+    @Override
+    public void tipo(String tipo) {
+        System.out.println("Se preparará " + tipo);
+    }
+
 
 }
