@@ -1,7 +1,14 @@
 public class Bebidas implements Menu {
 
-    @Override
-    public void item() {
-        System.out.println("Se preparará una bebida ");
+    private int numeroBebidas;
+
+    public Bebidas(int numeroBebidas) {
+        this.numeroBebidas = numeroBebidas;
     }
+
+    @Override
+    public void preparar() {
+        System.out.println("Se preparará " + numeroBebidas + " bebida(s)");
+    }
+
 }

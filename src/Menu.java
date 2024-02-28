@@ -1,5 +1,6 @@
 public interface Menu {
 
-    public void item();
+    public void preparar();
+
 
 }

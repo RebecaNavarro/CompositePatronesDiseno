@@ -1,19 +1,13 @@
-public class Platos implements ItemComida{
+public class Platos implements Menu{
 
-    @Override
-    public void item() {
-        System.out.println("Se preparará una comida");
+    private int numeroPlatos;
+
+    public Platos(int numeroPlatos) {
+        this.numeroPlatos = numeroPlatos;
     }
 
     @Override
-    public void postre() {
-        System.out.println("Se preparará un postre");
+    public void preparar() {
+        System.out.println("Se preparará " + numeroPlatos + " plato(s)");
     }
-
-    @Override
-    public void platoFuerte() {
-        System.out.println("Se preparará un plato fuerte");
-    }
-
-
 }
